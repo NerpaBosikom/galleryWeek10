@@ -20,8 +20,23 @@
         />
       </div>
       <div class="button">
-        <button id="prev" class="button__style" type="button">Назад</button>
-        <button id="next" class="button__style" type="button">Вперёд</button>
+        <button id="prev" class="button-style" type="button">Назад</button>
+        <button id="next" class="button-style" type="button">Вперёд</button>
+      </div>
+    </section>
+    <section class="star">
+      <h1>Задание со звёздочкой ***</h1>
+      <div class="button-wrapper">
+        <button
+          class="button-style"
+          onclick="alert(`Стоимость покупки: ${calculateTotalPrice()} рублей`);"
+        >
+          Рассчитать
+        </button>
+      </div>
+      <div class="button-wrapper">
+        <button id="calculate" class="button-style">Узнать стоимость</button>
+        <p id="output" class="output__style"></p>
       </div>
     </section>
     <script src="index.js"></script>
